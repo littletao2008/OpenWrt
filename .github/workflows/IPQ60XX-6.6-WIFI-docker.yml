@@ -94,7 +94,7 @@ jobs:
         cd $OPENWRT_PATH
         ./scripts/feeds update -a
         ./scripts/feeds install -a
-        sed -i 's/\/bin\/ash/\/bin\/bash/' package/base-files/files/etc/passwd
+      
 
     - name: Apply patches   
       run: |
